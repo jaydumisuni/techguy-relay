@@ -4,7 +4,7 @@ relay_server/bot.py — updated with machine UID deep-link activation
 import datetime, json, os
 
 USERS_FILE    = "users.json"
-BETA_CUTOFF   = datetime.date(2025, 7, 30)
+BETA_CUTOFF   = datetime.date(2026, 7, 30)
 PAYMENT_HOURS = int(os.environ.get("PAYMENT_HOURS", "5"))
 PRICE_USDT    = os.environ.get("PAYMENT_AMOUNT_USDT", "1")
 PRICE_USD     = os.environ.get("PAYMENT_AMOUNT_USD",  "1")

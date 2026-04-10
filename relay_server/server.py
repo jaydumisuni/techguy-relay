@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 PAYMENT_HOURS = int(os.environ.get("PAYMENT_HOURS", "5"))
-BETA_CUTOFF   = datetime.date(2025, 7, 30)
+BETA_CUTOFF   = datetime.date(2026, 7, 30)
 
 def is_beta_active(): return datetime.date.today() <= BETA_CUTOFF
 
